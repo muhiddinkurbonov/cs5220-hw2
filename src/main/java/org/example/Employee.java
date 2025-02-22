@@ -1,6 +1,6 @@
 package org.example;
 
-public class Employee {
+public class Employee implements Cloneable {
     private String id;
     private String name;
     private String designation;
@@ -56,13 +56,14 @@ public class Employee {
     }
 
     @Override
+    protected Object clone() throws CloneNotSupportedException {
+        Employee cloned = (Employee) super.clone();
+        cloned.address = (Address) address.clone();
+        return cloned;
+    }
+
+    @Override
     public String toString() {
-        return "Employee{" +
-                "id='" + id + '\'' +
-                ", name='" + name + '\'' +
-                ", designation='" + designation + '\'' +
-                ", salary= $" + salary +
-                ", address=" + address +
-                '}';
+        return "Employee{id=" + id + ", name=" + name + ", designation=" + designation + ", salary=$" + salary + ", address=" + address + "}";
     }
 }

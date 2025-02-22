@@ -1,6 +1,6 @@
 package org.example;
 
-public class Address {
+public class Address implements Cloneable{
     private String street;
     private String city;
     private String state;
@@ -46,12 +46,12 @@ public class Address {
     }
 
     @Override
+    protected Object clone() throws CloneNotSupportedException {
+        return super.clone();
+    }
+
+    @Override
     public String toString() {
-        return "Address{" +
-                "street='" + street + '\'' +
-                ", city='" + city + '\'' +
-                ", state='" + state + '\'' +
-                ", zipCode='" + zipCode + '\'' +
-                '}';
+        return "Address{" + "street=" + street + ", city=" + city + ", state=" + state + ", zipCode=" + zipCode + "}";
     }
 }

@@ -1,4 +1,4 @@
-package org.example;
+package org.example.employeeRecordManagement;
 
 public class Employee implements Cloneable {
     private String id;

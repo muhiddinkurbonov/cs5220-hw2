@@ -1,4 +1,4 @@
-package org.example;
+package org.example.employeeRecordManagement;
 
 public class Address implements Cloneable{
     private String street;

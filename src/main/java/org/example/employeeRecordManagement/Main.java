@@ -1,4 +1,7 @@
-package org.example;
+package org.example.employeeRecordManagement;
+
+import org.example.employeeRecordManagement.Address;
+import org.example.employeeRecordManagement.Employee;
 
 import java.util.Scanner;
 

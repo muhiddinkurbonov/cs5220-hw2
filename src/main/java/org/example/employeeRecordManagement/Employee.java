@@ -64,6 +64,12 @@ public class Employee implements Cloneable {
 
     @Override
     public String toString() {
-        return "Employee{id=" + id + ", name=" + name + ", designation=" + designation + ", salary=$" + salary + ", address=" + address + "}";
+        return "Employee{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", designation='" + designation + '\'' +
+                ", salary=$" + salary +
+                ", address=" + address +
+                '}';
     }
 }

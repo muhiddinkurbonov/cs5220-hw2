@@ -16,9 +16,7 @@ public class Main {
         while (true) {
             // Display current record
             System.out.println("\nCurrent Employee Record:");
-            System.out.println("--------------------");
             System.out.println(employee);
-            System.out.println("--------------------");
 
             // Menu
             System.out.println("\nOptions:");
